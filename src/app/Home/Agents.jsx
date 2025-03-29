@@ -7,7 +7,7 @@ function Agents() {
   return (
     <>
   <div className='w-full text-center pb-12 pt-12 bg-slate-100'style={{color:"#2d3954"}}>
-      <h1 className='text-[32px] font-bold' >Our Featured Agent</h1>
+      <h1 className='text-[32px] font-bold' >Our Featured Agents</h1>
       <p  className='text-slate-500 text-[18px]'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod</p>
       <p className='text-slate-500 text-[18px]'>tempor incididunt ut labore et dolore magna </p> 
       <p className='text-slate-500 text-[18px]'>aliqua. Ut enim ad minim veniam.</p>
