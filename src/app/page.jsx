@@ -9,7 +9,7 @@ import Agents from "./Home/Agents";
 
 export default function Home() {
   return (
-    <div className="">
+    <div >
       <Hero/>
       <Propertytype/>
       <Banner/>

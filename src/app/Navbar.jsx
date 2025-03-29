@@ -16,7 +16,7 @@ function Navbar() {
      initial={{opacity:0,y:-100}}
      animate={{opacity:1,y:0}}
      transition={{duration:0.6,delay:0.6}}
-    className='w-full fixed z-30 top-0  right-0 left-0  items-center justify-between md:justify-around h-16 flex 
+    className='w-full fixed z-30 top-0  right-0 left-0 text-black items-center justify-between md:justify-around h-16 flex 
      bg-white shadow-sm shadow-gray-400 '>
       <div >
   <img className ="w-[155px] h-full"src="https://funny-daffodil-350bc9.netlify.app/images/logo.png"/>
