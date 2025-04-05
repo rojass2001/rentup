@@ -1,4 +1,4 @@
-export const navarray=[
+ const navarray=[
     {name:"Home",
     links:"/"
     },

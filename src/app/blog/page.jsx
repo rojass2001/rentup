@@ -1,5 +1,5 @@
 import Pageheading from "../Components/Pageheading"
-import Properties from "../Home/Properties"
+import Properties from "../Components/Home/Properties"
 
 function Blog() {
   return (

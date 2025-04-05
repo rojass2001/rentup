@@ -1,11 +1,11 @@
 import Image from "next/image";
-import Hero from "./Home/Hero";
-import Propertytype from "./Home/Propertytypes";
-import Banner from "./Home/Banner";
-import Recentlylisted from "./Home/Recentlylisted";
-import Properties from "./Home/Properties";
-import Ourawards from "./Home/Ourawards";
-import Agents from "./Home/Agents";
+import Hero from "./Components/Home/Hero";
+import Propertytype from "./Components/Home/Propertytypes";
+import Banner from "./Components/Home/Banner";
+import Recentlylisted from "./Components/Home/Recentlylisted";
+import Properties from "./Components/Home/Properties";
+import Ourawards from "./Components/Home/Ourawards";
+import Agents from "./Components/Home/Agents";
 
 export default function Home() {
   return (

@@ -1,5 +1,5 @@
 import Pageheading from "../Components/Pageheading"
-import Banner from "../Home/Banner"
+import Banner from "../Components/Home/Banner"
 
 function Service() {
   return (
