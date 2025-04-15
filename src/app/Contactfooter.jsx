@@ -1,6 +1,6 @@
 function Contactfooter() {
-return (
-      
+  
+return (   
   <footer className='w-full  flex items-center justify-between py-8 text-white
        bg-green-500 md:px-3  px-1 lg:px-20 '>
       <div className=''>

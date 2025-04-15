@@ -1,6 +1,6 @@
 
-
-function Pageheading({mainhead,subhead}) {
+function Pageheading({ mainhead, subhead }) {
+  
     return (
       <>
         <div className='w-full h-[350px] mt-[60px] relative'>
