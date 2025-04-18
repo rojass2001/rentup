@@ -33,16 +33,11 @@ export default function useAuth(email,password) {
 
     const loginsubmit = async (e) => {
           e.preventDefault()
-            try {
-                if (!email || !password) {
-                    throw new Error("Email and password must be provided.");
-                }
+            try {  
                 await signInWithEmailAndPassword(auth, email, password);
+                Cookies.set('login', JSON.stringify(true), { expires: 7 })
                 router.push("/")
-                toast.success("login successfully")
-                 Cookies.set('login', JSON.stringify(true), { expires: 7 });
-                 
-               
+                toast.success("login successfully")   
             } catch (error) {
                 toast.error("Invalid username or password");
                 console.log(error);
