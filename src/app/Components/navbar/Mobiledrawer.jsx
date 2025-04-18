@@ -6,7 +6,6 @@ import useAuth from '@/app/customhooks/useauth'
 
 function Mobiledrawer({ openandclose, open }) {
     const { logout } = useAuth()
-    
     return (
  <AnimatePresence mode="wait">
      {open && (

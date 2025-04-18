@@ -7,7 +7,8 @@ import Cookies from 'js-cookie';
 
 export default function useAuth(email,password) {
      const router=useRouter()
-     const registersubmit = async() => {
+     const registersubmit = async(e) => {
+        e.preventDefault()
         if (!email || !password) {
             toast.error("Email and password are required.");
             return;
@@ -30,7 +31,8 @@ export default function useAuth(email,password) {
     }
 
 
-      const loginsubmit = async () => {
+    const loginsubmit = async (e) => {
+          e.preventDefault()
             try {
                 if (!email || !password) {
                     throw new Error("Email and password must be provided.");
@@ -47,7 +49,8 @@ export default function useAuth(email,password) {
             }
     };
     
-    const resetemail = () => {
+    const resetemail = (e) => {
+        e.preventDefault()
             if (!email) {
                 toast.error("Email is required to reset the password.");
                 return;
