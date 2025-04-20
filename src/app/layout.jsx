@@ -4,6 +4,7 @@ import Navbar from "./Components/navbar/Navbar";
 import Contactfooter from "./Contactfooter";
 import Footer from "./Footer";
 import { ToastContainer } from "react-toastify";
+import Tabbar from "./Components/Tabbar/Tabbar";
 
 const inter= Inter({ subsets: ['latin'] })
 export const metadata = {
@@ -19,7 +20,8 @@ export default function RootLayout({ children }) {
         <Navbar/>
         {children}
          <Contactfooter/>
-        <Footer/>
+        <Footer />
+        <Tabbar/>
       </body>
     </html>
   );

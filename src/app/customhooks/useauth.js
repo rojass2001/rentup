@@ -37,7 +37,7 @@ export default function useAuth(email,password) {
                 await signInWithEmailAndPassword(auth, email, password);
                 Cookies.set('login', JSON.stringify(true), { expires: 7 })
                 router.push("/")
-                toast.success("login successfully")   
+                toast.success("login successfully");   
             } catch (error) {
                 toast.error("Invalid username or password");
                 console.log(error);
@@ -63,10 +63,10 @@ export default function useAuth(email,password) {
             console.log(login)
             if (login === true) {
             Cookies.set('login', JSON.stringify(false), { expires: 7 });
-                toast.success("sucessfully logout")
+                toast.success("sucessfully logout");
             }
             else {
-                toast.warning("please login first")
+                toast.warning("please login first");
                 }
         }
 
