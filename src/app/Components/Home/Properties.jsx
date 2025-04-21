@@ -1,3 +1,4 @@
+"use client"
 import { FaLocationDot } from "react-icons/fa6";
 import propertyarray from './Propertyarray';
 function Properties() {

@@ -1,4 +1,4 @@
-/* eslint-disable react/jsx-key */
+"use client"
 import { FaFacebook,FaLinkedin,FaTwitter,FaInstagram, FaPhone } from "react-icons/fa"
 export const agent=[
     {listing:"50 Listings",

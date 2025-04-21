@@ -1,4 +1,4 @@
-import Image from "next/image";
+"use client"
 import Hero from "./Components/Home/Hero";
 import Propertytype from "./Components/Home/Propertytypes";
 import Banner from "./Components/Home/Banner";

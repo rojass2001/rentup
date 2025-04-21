@@ -1,3 +1,4 @@
+"use client"
 import { banner } from "./Bannerarray"
     function Banner() {
       return (

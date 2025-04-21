@@ -1,3 +1,4 @@
+"use client"
 import React from 'react'
 import { IoSearchSharp } from "react-icons/io5";
 const input="w-full h-10 border-2 border-gray-400"

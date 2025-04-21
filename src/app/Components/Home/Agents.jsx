@@ -1,4 +1,4 @@
-
+"use client"
 import { BiSolidMessageDetail } from "react-icons/bi";
 import { FaFacebook,FaLinkedin,FaTwitter,FaInstagram, FaPhone } from "react-icons/fa"
 import { FaLocationDot, } from 'react-icons/fa6'

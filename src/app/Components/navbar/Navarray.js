@@ -1,4 +1,5 @@
- const navarray=[
+"use client" 
+const navarray = [
     {name:"Home",
     links:"/"
     },

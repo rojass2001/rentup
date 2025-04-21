@@ -1,3 +1,4 @@
+"use client"
 import Form from "../Components/Form"
 import Pageheading from "../Components/Pageheading"
 

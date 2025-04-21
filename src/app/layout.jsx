@@ -1,8 +1,8 @@
 import { Inter} from "next/font/google";
 import "./globals.css";
 import Navbar from "./Components/navbar/Navbar";
-import Contactfooter from "./Contactfooter";
-import Footer from "./Footer";
+import Contactfooter from "./Components/Footer/Contactfooter";
+import Footer from "./Components/Footer/Footer";
 import { ToastContainer } from "react-toastify";
 import Tabbar from "./Components/Tabbar/Tabbar";
 

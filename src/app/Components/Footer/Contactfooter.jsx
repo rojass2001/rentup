@@ -1,3 +1,4 @@
+"use client"
 function Contactfooter() {
 return (   
   <footer className='w-full  flex items-center justify-between py-8 text-white

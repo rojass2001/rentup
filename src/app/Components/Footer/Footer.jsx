@@ -1,6 +1,5 @@
-const layouts=["Home Page","About Page","Service Page","Property Page","Contact Page","Single Blog"]
-const allsection=["Headers","Features","Attractive","Testimonials", "Videos"," Footer"]
-const company=["About","Blog","Pricing","Affiliate","Login","Changelog"]
+"use client"
+import { allsection, company, layouts } from "./Footerarray"
 
 function Footer() {
 return (

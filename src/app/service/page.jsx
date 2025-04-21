@@ -1,3 +1,4 @@
+"use client"
 import Pageheading from "../Components/Pageheading"
 import Banner from "../Components/Home/Banner"
 

@@ -1,3 +1,4 @@
+"use client"
 import { FaHome } from "react-icons/fa";
 import { MdOutlineRoundaboutRight } from "react-icons/md";
 import { IoIosContact } from "react-icons/io";
