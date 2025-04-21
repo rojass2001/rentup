@@ -15,7 +15,7 @@ function Navbar() {
   return (
   <nav className='w-full fixed z-50 top-0 pr-1 right-0 left-0 text-black items-center justify-between md:justify-around h-16 flex bg-white shadow-sm shadow-gray-400 '>
        <img className ="w-[155px] h-full"src="https://funny-daffodil-350bc9.netlify.app/images/logo.png"/>
-          <div className='hidden md:flex font-medium text-[17px] gap-5 '>
+          <div className='hidden md:flex font-medium text-[16px] gap-5 '>
               {navarray?.slice(0,5).map((a)=>( 
                 <Link href={a.links}  key={a.name} >
                   <li className="hover:text-green-500 mr-3 list-none" >{a.name}</li>

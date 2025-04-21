@@ -25,8 +25,7 @@ function Register() {
           <FaLock /> <input required className='outline-none w-full h-12 pl-2  bg-gray-100' name="password" value={values.password} onChange={handlechange} placeholder='enter password' type="password"/>
         </div>
         <Link href="/login" className='text-sm underline'>already have account please login</Link>
-        <button onClick={registersubmit} className=' bg-green-500 text-white rounded-xl w-[50%]  py-2 font-bold'>Register</button>
-        
+        <button onClick={registersubmit} className=' bg-green-500 text-white rounded-xl w-[50%]  py-2 font-bold'>Register</button>   
     </div>
   </Form> 
   )
