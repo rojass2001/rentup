@@ -5,20 +5,19 @@ import { useRouter } from "next/navigation";
 import { toast } from "react-toastify";
 import Cookies from 'js-cookie';
 
-export default function useAuth(email,password) {
+export default function useAuthentication(email,password) {
      const router=useRouter()
      const registersubmit = async(e) => {
         e.preventDefault()
         if (!email || !password) {
             toast.error("Email and password are required.");
-            return;
          }
          
         createUserWithEmailAndPassword(auth, email, password)
         .then((userCredential) => {
         // Success! user created
         const user = userCredential.user;
-         toast.success('User created successfully' + user);       
+         toast.success('User created successfully ' + email);       
          }).catch((error) => {
                 if (error.code === 'auth/email-already-in-use') {
                     toast.error("This email is already registered. Try logging in instead.");
@@ -66,9 +65,12 @@ export default function useAuth(email,password) {
                 toast.success("sucessfully logout");
             }
             else {
-                toast.warning("please login first");
-                }
+                   toast.warning("please login first");
+                 }
         }
-
-    return{registersubmit,loginsubmit,resetemail,logout}
+    const contactsubmit = (e) => {
+         e.preventDefault()
+        toast.success("message submit sucessfully");
+     }
+    return{registersubmit,loginsubmit,resetemail,logout,contactsubmit}
 }

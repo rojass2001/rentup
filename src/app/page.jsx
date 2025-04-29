@@ -6,10 +6,11 @@ import Recentlylisted from "./Components/Home/Recentlylisted";
 import Properties from "./Components/Home/Properties";
 import Ourawards from "./Components/Home/Ourawards";
 import Agents from "./Components/Home/Agents";
+import Box from "./Components/Box";
 
 export default function Home() {
   return (
-    <div >
+    <Box>
       <Hero/>
       <Propertytype/>
       <Banner/>
@@ -17,6 +18,6 @@ export default function Home() {
       <Properties/>
       <Ourawards/>
       <Agents/>
-    </div>
+    </Box>
   );
 }

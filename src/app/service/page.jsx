@@ -1,13 +1,14 @@
 "use client"
 import Pageheading from "../Components/Pageheading"
 import Banner from "../Components/Home/Banner"
+import Box from "../Components/Box"
 
 function Service() {
   return (
-    <div className='w-full'>
+    <Box className='w-full'>
       <Pageheading mainhead="Service" subhead="Services -All Services"/>
       <Banner/>
-    </div>
+    </Box>
   )
 }
 
