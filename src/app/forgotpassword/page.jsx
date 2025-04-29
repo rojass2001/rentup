@@ -3,10 +3,10 @@ import React from 'react'
 import { MdEmail } from 'react-icons/md'
 import useInput from '../customhooks/useInput'
 import useAuthentication from '../customhooks/useauth'
-import Form from '../Components/Form'
-import Box from '../Components/Box'
-import Button from '../Components/Button'
-import Text from '../Components/Text'
+import Form from '../../Components/Form'
+import Box from '../../Components/Box'
+import Button from '../../Components/Button'
+import Text from '../../Components/Text'
 const inputcontainer = "w-full px-2 border-[1px] border-green-500 flex items-center bg-gray-100"
 
 function Forgotpassword() {

@@ -28,9 +28,8 @@ function Navbar() {
        <Link href="/login">
         <Button className='bg-green-500  rounded-lg w-32 h-[50px] text-md text-white font-bold '>Sign in</Button>
        </Link>
-      <Logouticon/>
+       <Logouticon/>
       </Box>  
-    
    </nav>
   )
 }

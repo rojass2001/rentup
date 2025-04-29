@@ -1,13 +1,13 @@
 "use client"
-import Box from "../Components/Box"
-import Button from "../Components/Button"
-import Form from "../Components/Form"
-import Pageheading from "../Components/Pageheading"
-import Text from "../Components/Text"
-import useAuth from "../customhooks/useauth"
+import Box from "@/Components/Box"
+import Button from "@/Components/Button"
+import Form from "@/Components/Form"
+import Pageheading from "@/Components/Pageheading"
+import Text from "@/Components/Text"
+import useAuthentication from "../customhooks/useauth"
 
 function Contact() {
-  const{contactsubmit}=useAuth()
+  const{contactsubmit}=useAuthentication()
   return (
   <Box className="w-full">
     <Pageheading mainhead="Contact Us" subhead="Get Helps & Friendly Support"/>
