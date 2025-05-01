@@ -1,20 +1,27 @@
-"use client"
-import React from 'react'
-import Box from '../Box'
-import Text from '../Text'
+"use client"; // Enables client-side rendering in Next.js (App Router)
 
-function Recentlylisted() {
+import React from "react"; // Importing React
+import Box from "../Box"; // Reusable Box component for layout
+import Text from "../Text"; // Reusable Text component for rendering text
+
+function RecentlyListed() {
   return (
-    <>
-    <Box className='w-full h-[200px] mb-5 text-center place-items-center justify-center pt-14 sm:mb-[40px]'>
-      <Text className='text-4xl mb-4   font-bold text-slate-700'>Recent Property Listed</Text>
-      <Text className='text-center place-items-center justify-center text-black max-w-[500px]  '> Lorem ipsum dolor sit amet, consectetur 
-        adipiscing elit, sed do  eiusmod tempor incididunt ut labore et dolor
-        magna aliqua. Ut enim ad minim veniam
+    <Box className="w-full mb-10 text-center flex flex-col items-center justify-center pt-14">
+      {/* Main Box container with width, margin, padding, and flex layout */}
+      
+      {/* Heading displaying "Recent Property Listed" */}
+      <Text className="text-4xl font-bold text-slate-700 mb-4">
+        Recent Property Listed
+      </Text>
+
+      {/* Description text for the section, with a max-width for readability */}
+      <Text className="text-black max-w-[500px]">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+        veniam.
       </Text>
     </Box>
-    </>
-  )
+  );
 }
 
-export default Recentlylisted
+export default RecentlyListed;

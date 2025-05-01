@@ -1,7 +1,7 @@
 "use client"
-function Form({ className, children, onsubmit }) {
+function Form({ className, children, onSubmit }) {
   return (
-    <form className={className} onSubmit={onsubmit}>
+    <form className={className} onSubmit={onSubmit}>
       {children}
     </form>
   )

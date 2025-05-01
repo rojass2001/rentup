@@ -1,12 +1,21 @@
-"use client"
-import { useState } from 'react'
+"use client"; // Enables client-side functionality in Next.js (App Router)
 
-export default function useInput(initialstate) {
-    const [values, setvalues] = useState(initialstate)
-    return [values,
-        (event) => {
-            setvalues({ ...values,[event.target.name]:event.target.value})
-}]
+import { useState } from 'react';
+
+// Custom hook to handle form input state
+export default function useInput(initialState) {
+  // Set up state to store input values
+  const [values, setValues] = useState(initialState);
+
+  // Return current values and a change handler function
+  return [
+    values,
+    (event) => {
+      // Update the specific field value based on input name
+      setValues({
+        ...values,
+        [event.target.name]: event.target.value
+      });
+    }
+  ];
 }
-
-
