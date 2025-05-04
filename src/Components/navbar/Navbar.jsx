@@ -1,4 +1,3 @@
-
 import navarray from './Navarray';
 import Link from 'next/link';
 import Box from '../Box';
