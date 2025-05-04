@@ -1,10 +1,10 @@
 "use client"
+
 import { HiOutlineUser } from 'react-icons/hi'
 import Box from '../Box';
 import Button from '../Button'
 import { IoSettingsOutline } from "react-icons/io5";
 import useAuth from '@/app/customhooks/useauth'
-import Link from 'next/link'
 
 function Logouticon() {
   const{logout}=useAuth()

@@ -44,7 +44,7 @@ function Tabbar() {
               onClick={() => handleTabChange(5)}
               className={`flex items-center text-sm place-content-center flex-col ${open === 5 ? "font-bold" : ""}`}
             >
-              <HiOutlineUser className="text-2xl" />
+              <HiOutlineUser className="text-2xl mx-auto" />
               Signout
             </Button>
           </Link>
