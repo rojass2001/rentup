@@ -1,4 +1,5 @@
 // Importing all the section components for the homepage layout
+"use client"; // Ensures the component runs on the client side in Next.js
 import Hero from "../Components/Home/Hero"; // Hero section (top banner, intro)
 import Propertytype from "../Components/Home/Propertytypes"; // Section showing types of properties
 import Banner from "../Components/Home/Banner"; // Promotional or featured banner section
