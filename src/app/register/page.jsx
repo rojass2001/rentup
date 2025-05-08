@@ -5,8 +5,8 @@ import { MdEmail } from 'react-icons/md'; // Importing email icon for email inpu
 import Link from 'next/link'; // Importing Link to navigate to login page
 
 // Custom hooks for handling form input and registration logic
-import useAuthentication from '../customhooks/useauth';
-import useInput from '../customhooks/useInput';
+import useAuthentication from '../../customhooks/useauth';
+import useInput from '../../customhooks/useInput';
 
 // Reusable UI components
 import Form from '../../Components/Form';
@@ -19,7 +19,7 @@ const inputContainerClass = "w-full px-2 border-[1px] border-green-500 flex item
 
 function Register() {
   // State management for email and password input fields using custom hook
-  const [values, handleChange] = useInput( { email: "", password: ""} );
+  const [values, handleChange] = useInput({ email: "", password: "" });
 
   // Registration submit function from the custom hook
   const { registerSubmit } = useAuthentication(values.email, values.password);

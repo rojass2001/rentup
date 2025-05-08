@@ -2,9 +2,9 @@
 
 import Link from "next/link";
 import tabarray from "./Tabarray"; // Array containing tab data (name, icon, link)
-import useAuthentication from "@/app/customhooks/useauth"; // Custom hook for authentication (includes logout)
+import useAuthentication from "@/customhooks/useauth"; // Custom hook for authentication (includes logout)
 import { HiOutlineUser } from 'react-icons/hi'; // User icon for logout
-import useKeyboardStatus from "@/app/customhooks/useKeyboard"; // Custom hook to detect if the mobile keyboard is open
+import useKeyboardStatus from "@/customhooks/useKeyboard"; // Custom hook to detect if the mobile keyboard is open
 import Box from "../Box"; // Custom layout component
 import Button from "../Button"; // Custom button component
 import { useMyTabContext } from "@/contextApi/Tabcontext"; // Context API for managing tab state

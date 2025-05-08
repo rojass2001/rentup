@@ -35,7 +35,7 @@ function Navbar() {
       <Box className="flex gap-5 items-center">
         <Link href="/login">
           <Button className="bg-green-500 text-white font-bold w-32 h-[50px] text-md rounded-lg">
-            Sign inS
+            Sign in
           </Button>
         </Link>
         <Logouticon />{/* logout icon for logout */}

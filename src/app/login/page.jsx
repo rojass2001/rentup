@@ -5,8 +5,8 @@ import { MdEmail } from 'react-icons/md';
 import Link from 'next/link';
 
 // Custom hooks for handling form input and authentication
-import useInput from '../customhooks/useInput';
-import useAuthentication from '../customhooks/useauth';
+import useInput from '../../customhooks/useInput';
+import useAuthentication from '../../customhooks/useauth';
 
 // Reusable UI components
 import Form from '../../Components/Form';

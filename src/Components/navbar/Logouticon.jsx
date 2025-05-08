@@ -4,10 +4,10 @@ import { HiOutlineUser } from 'react-icons/hi'
 import Box from '../Box';
 import Button from '../Button'
 import { IoSettingsOutline } from "react-icons/io5";
-import useAuth from '@/app/customhooks/useauth'
+import useAuth from '@/customhooks/useauth'
 
 function Logouticon() {
-  const{logout}=useAuth()
+  const { logout } = useAuth()
   return (
     <Box className="relative hidden md:block bg-white rounded-full p-2 h-[60%] shadow-md shadow-gray-300 group">
       {/* User Icon */}
