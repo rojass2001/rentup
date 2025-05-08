@@ -1,9 +1,9 @@
 "use client"; // Ensures the code runs only on the client side (Next.js)
 
-import { 
-  createUserWithEmailAndPassword, 
-  signInWithEmailAndPassword, 
-  sendPasswordResetEmail 
+import {
+  createUserWithEmailAndPassword,
+  signInWithEmailAndPassword,
+  sendPasswordResetEmail
 } from "firebase/auth";
 import { auth } from "@/app/Backend/Firebase";
 import { useRouter } from "next/navigation";
@@ -14,7 +14,7 @@ import { useMyTabContext } from "@/contextApi/Tabcontext";
 // Custom authentication hook using Firebase Auth
 export default function useAuthentication(email, password) {
   const router = useRouter();
-  const{ setcurrentactivetab }=useMyTabContext()
+  const { setcurrentactivetab } = useMyTabContext()
   // 🟩 Register a new user with email and password
   const registerSubmit = async (e) => {
     e.preventDefault();
@@ -32,7 +32,7 @@ export default function useAuthentication(email, password) {
     } catch (error) {
       if (error.code === 'auth/email-already-in-use') {
         toast.error("This email is already registered. Try logging in instead.");
-        
+
       }
       else {
         toast.error(`Password must be at least 6 characters`);
@@ -48,8 +48,9 @@ export default function useAuthentication(email, password) {
       await signInWithEmailAndPassword(auth, email, password);
       Cookies.set('login', JSON.stringify(true), { expires: 7 }); // Set login state in cookies
       toast.success("Login successful");
+      setcurrentactivetab(0); // Reset active tab to 0 after login
       router.push("/"); // Redirect to home page after sucessfully login
-      setcurrentactivetab(0)
+
     } catch (error) {
       toast.error("Invalid username or password");
       console.error(error);
