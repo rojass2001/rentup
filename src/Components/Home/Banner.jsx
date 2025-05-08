@@ -1,12 +1,16 @@
 "use client"; // Enables the component to be client-rendered in Next.js (App Router)
 
+import { MyProvider, useMyTabContext } from "@/contextApi/Tabcontext";
 // Importing reusable components for layout and text display
 import Box from "../Box"; // Container component for layout
 import Text from "../Text"; // Component to display text content
 import { banner } from "./Bannerarray"; // Importing data for the banner items (assumed to be an array of objects)
 
 function Banner() {
+  const{value ,incrementValue}=useMyTabContext()
   return (
+    <>
+     
     <Box className="w-full pb-20 bg-slate-100">
       {/* Box containing the grid layout for banner items */}
       <Box className="w-full px-3 pt-8 gap-9 md:gap-16 grid grid-cols-2 lg:grid-cols-5 md:grid-cols-3 md:px-12">
@@ -27,7 +31,8 @@ function Banner() {
           </Box>
         ))}
       </Box>
-    </Box>
+    </Box> 
+  </>  
   );
 }
 

@@ -1,5 +1,6 @@
 // Importing all the section components for the homepage layout
 "use client"; // Ensures the component runs on the client side in Next.js
+
 import Hero from "../Components/Home/Hero"; // Hero section (top banner, intro)
 import Propertytype from "../Components/Home/Propertytypes"; // Section showing types of properties
 import Banner from "../Components/Home/Banner"; // Promotional or featured banner section
@@ -8,9 +9,11 @@ import Properties from "../Components/Home/Properties"; // General list or showc
 import Ourawards from "../Components/Home/Ourawards"; // Awards or achievements section
 import Agents from "../Components/Home/Agents"; // Meet the agents or team members
 import Box from "../Components/Box"; // Wrapper layout component (likely provides layout or padding)
+import { MyProvider } from "@/contextApi/Tabcontext";
 
 export default function Home() {
   return (
+    <MyProvider>
     <Box>
       {/* Main landing section */}
       <Hero />
@@ -32,6 +35,7 @@ export default function Home() {
 
       {/* Team/Agents introduction */}
       <Agents />
-    </Box>
+      </Box>
+      </MyProvider>
   );
 }

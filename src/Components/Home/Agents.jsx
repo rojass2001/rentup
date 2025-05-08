@@ -1,6 +1,7 @@
-"use client";
+"use client"; // Enables client-side rendering in Next.js (App Router)
+
 import { BiSolidMessageDetail } from "react-icons/bi";
-import { FaFacebook, FaLinkedin, FaTwitter, FaInstagram, FaPhone } from "react-icons/fa";
+import {  FaPhone } from "react-icons/fa";
 import { FaLocationDot } from "react-icons/fa6";
 import { agent, agenticons } from "./Agentsarray";
 import Box from "../Box";

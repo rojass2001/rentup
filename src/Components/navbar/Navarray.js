@@ -1,24 +1,33 @@
 
 const navarray = [
-    {name:"Home",
-    links:"/"
-    },
-    {name:"About",
-    links:"/about"
-    },
-    {name:"Service",
-    links:"/service"
-    },
-    {name:"Blog",
-     links:"/blog"
-    },
     {
-     name:"Contact",
-     links:"/contact"
+        name: "Home",
+        links: "/"
     },
+
     {
-    name:"Signin",
-    links:"/login"
+        name: "About",
+        links: "/about"
+    },
+
+    {
+        name: "Service",
+        links: "/service"
+    },
+
+    {
+        name: "Blog",
+        links: "/blog"
+    },
+
+    {
+        name: "Contact",
+        links: "/contact"
+    },
+
+    {
+        name: "Signin",
+        links: "/login"
     }
 ]
 

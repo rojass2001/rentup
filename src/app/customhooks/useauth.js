@@ -9,11 +9,12 @@ import { auth } from "@/app/Backend/Firebase";
 import { useRouter } from "next/navigation";
 import { toast } from "react-toastify";
 import Cookies from 'js-cookie';
+import { useMyTabContext } from "@/contextApi/Tabcontext";
 
 // Custom authentication hook using Firebase Auth
 export default function useAuthentication(email, password) {
   const router = useRouter();
-
+  const{ setcurrentactivetab }=useMyTabContext()
   // 🟩 Register a new user with email and password
   const registerSubmit = async (e) => {
     e.preventDefault();
@@ -31,7 +32,9 @@ export default function useAuthentication(email, password) {
     } catch (error) {
       if (error.code === 'auth/email-already-in-use') {
         toast.error("This email is already registered. Try logging in instead.");
-      } else {
+        
+      }
+      else {
         toast.error(`Password must be at least 6 characters`);
       }
     }
@@ -44,8 +47,9 @@ export default function useAuthentication(email, password) {
     try {
       await signInWithEmailAndPassword(auth, email, password);
       Cookies.set('login', JSON.stringify(true), { expires: 7 }); // Set login state in cookies
-      router.push("/"); // Redirect to home page
       toast.success("Login successful");
+      router.push("/"); // Redirect to home page after sucessfully login
+      setcurrentactivetab(0)
     } catch (error) {
       toast.error("Invalid username or password");
       console.error(error);
