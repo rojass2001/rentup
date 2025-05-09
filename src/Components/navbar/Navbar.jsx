@@ -1,3 +1,4 @@
+"use client"
 
 import navarray from './Navarray';
 import Link from 'next/link';
