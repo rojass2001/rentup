@@ -47,10 +47,9 @@ export default function useAuthentication(email, password) {
     try {
       await signInWithEmailAndPassword(auth, email, password);
       Cookies.set('login', JSON.stringify(true), { expires: 7 }); // Set login state in cookies
-      setcurrentactivetab(0); // Reset active tab to 0 after login
       router.push("/"); // Redirect to home page after sucessfully login
       toast.success("Login successful");
-
+      setcurrentactivetab(0); // Reset active tab to 0 after login
 
     } catch (error) {
       toast.error("Invalid username or password");
