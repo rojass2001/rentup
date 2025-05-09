@@ -47,7 +47,7 @@ export default function useAuthentication(email, password) {
     try {
       await signInWithEmailAndPassword(auth, email, password);
       Cookies.set('login', JSON.stringify(true), { expires: 7 }); // Set login state in cookies
-      setcurrentactivetab(0); // Reset active tab to 0 after login
+      setcurrentactivetab(3); // Reset active tab to 3 for blog after login
       toast.success("Login successful");
       router.push("/blog");//redirect to blog page after login
 
