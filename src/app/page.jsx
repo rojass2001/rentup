@@ -7,12 +7,11 @@ import Recentlylisted from "../Components/Home/Recentlylisted"; // Recently list
 import Properties from "../Components/Home/Properties"; // General list or showcase of properties
 import Ourawards from "../Components/Home/Ourawards"; // Awards or achievements section
 import Agents from "../Components/Home/Agents"; // Meet the agents or team members
-import Box from "../Components/Box"; // Wrapper layout component (likely provides layout or padding)
 
 export default function Home() {
   return (
 
-    <Box>
+    <main>
       {/* Main landing section */}
       <Hero />
 
@@ -33,6 +32,6 @@ export default function Home() {
 
       {/* Team/Agents introduction */}
       <Agents />
-    </Box>
+    </main>
   );
 }
